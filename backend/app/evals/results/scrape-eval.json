@@ -1,0 +1,50 @@
+{
+  "days": 6,
+  "strategies": {
+    "static": {
+      "exact_days": "6/6",
+      "avg_seconds": 2.53,
+      "change_precision": 1.0,
+      "change_recall": 1.0,
+      "tp_fp_fn": [
+        58,
+        0,
+        0
+      ]
+    },
+    "api": {
+      "exact_days": "6/6",
+      "avg_seconds": 0.01,
+      "change_precision": 1.0,
+      "change_recall": 1.0,
+      "tp_fp_fn": [
+        58,
+        0,
+        0
+      ]
+    },
+    "selenium": {
+      "exact_days": "6/6",
+      "avg_seconds": 3.72,
+      "change_precision": 1.0,
+      "change_recall": 1.0,
+      "tp_fp_fn": [
+        58,
+        0,
+        0
+      ]
+    }
+  },
+  "robustness": {
+    "layout": {
+      "static": "0 məhsul, düzgün=False",
+      "api": "25 məhsul, düzgün=True",
+      "selenium": "xəta (TimeoutException)"
+    },
+    "price_format": {
+      "static": "25 məhsul, düzgün=True",
+      "api": "25 məhsul, düzgün=True",
+      "selenium": "25 məhsul, düzgün=True"
+    }
+  }
+}

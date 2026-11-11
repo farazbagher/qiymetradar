@@ -1,0 +1,3621 @@
+{
+  "split": "heldout",
+  "n": 18,
+  "modes": {
+    "regex": {
+      "n": 18,
+      "auto_correct": 0,
+      "auto_correct_pct": 0.0,
+      "needs_review": 18,
+      "needs_review_pct": 100.0,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 0.0,
+      "field_accuracy": {
+        "invoice_no": 0.0,
+        "date": 0.0,
+        "vendor": 0.0,
+        "total": 0.0,
+        "vat": 66.7
+      },
+      "calls": {},
+      "by": {
+        "template=C": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C1-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 94.0,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 88.6,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 92.5,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 57.1,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 56.0,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": null,
+            "currency": null
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 58.5,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 5051000750.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 53.6,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 502755.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 55.7,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 55.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 53.9,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        }
+      ]
+    },
+    "local": {
+      "n": 18,
+      "auto_correct": 11,
+      "auto_correct_pct": 61.1,
+      "needs_review": 7,
+      "needs_review_pct": 38.9,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 61.1,
+      "field_accuracy": {
+        "invoice_no": 61.1,
+        "date": 88.9,
+        "vendor": 72.2,
+        "total": 83.3,
+        "vat": 77.8
+      },
+      "calls": {
+        "local": 18
+      },
+      "by": {
+        "template=C": {
+          "auto_correct": 11,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 5,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C1-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 94.0,
+          "pred": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "nömrədə Kiril/Yunan hərfləri var (OCR 'HF'-i 'НЕ' oxuya bilər)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": "НЕ/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 88.6,
+          "pred": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 92.5,
+          "pred": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 57.1,
+          "pred": {
+            "invoice_no": "227755",
+            "date": "2026-02-07",
+            "vendor": "WENGE",
+            "total": 2602.24,
+            "vat": 121.61,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 56.0,
+          "pred": {
+            "invoice_no": "WENO 0",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dilital MMC",
+            "total": 3422.0,
+            "vat": 1896.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 58.5,
+          "pred": {
+            "invoice_no": "55000",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "OCR etibarı aşağıdır (54)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 53.6,
+          "pred": {
+            "invoice_no": "5557",
+            "date": "2026-07-04",
+            "vendor": "ib: ила OÜÜopçÜd",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 55.7,
+          "pred": {
+            "invoice_no": "00",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Ојна MMC",
+            "total": 5085.94,
+            "vat": 925.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil",
+            "OCR etibarı aşağıdır (54)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 53.9,
+          "pred": {
+            "invoice_no": "VF300/286",
+            "date": "2026-07-25",
+            "vendor": "Noutbuk Pro 15",
+            "total": 8117.59,
+            "vat": 1338.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        }
+      ]
+    },
+    "claude": {
+      "n": 18,
+      "auto_correct": 11,
+      "auto_correct_pct": 61.1,
+      "needs_review": 7,
+      "needs_review_pct": 38.9,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 61.1,
+      "field_accuracy": {
+        "invoice_no": 61.1,
+        "date": 83.3,
+        "vendor": 72.2,
+        "total": 83.3,
+        "vat": 83.3
+      },
+      "calls": {
+        "claude": 18
+      },
+      "by": {
+        "template=C": {
+          "auto_correct": 11,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 5,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C1-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 94.0,
+          "pred": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "nömrədə Kiril/Yunan hərfləri var (OCR 'HF'-i 'НЕ' oxuya bilər)"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": "НЕ/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 88.6,
+          "pred": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 92.5,
+          "pred": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "nömrə sənəd mətnində yoxdur",
+            "satıcı adı sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 57.1,
+          "pred": {
+            "invoice_no": "<UNKNOWN>",
+            "date": "2026-02-07",
+            "vendor": "<UNKNOWN>",
+            "total": 2602.24,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "none",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "claude: cavab alınmadı"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 56.0,
+          "pred": {},
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 58.5,
+          "pred": {
+            "invoice_no": "55000",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "satıcı adı sənəd mətnində yoxdur",
+            "OCR etibarı aşağıdır (54)"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 53.6,
+          "pred": {
+            "invoice_no": "5557",
+            "date": "2026-07-04",
+            "vendor": "<UNKNOWN>",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "nömrə sənəd mətnində yoxdur",
+            "satıcı adı sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 55.7,
+          "pred": {
+            "invoice_no": "<UNKNOWN>",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Ojma MMC",
+            "total": 6011.41,
+            "vat": 925.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "satıcı adı sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği sənəd mətnində yoxdur",
+            "OCR etibarı aşağıdır (54)"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 53.9,
+          "pred": {
+            "invoice_no": "VF300/286",
+            "date": "2026-09-09",
+            "vendor": "<UNKNOWN>",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        }
+      ]
+    },
+    "ladder": {
+      "n": 18,
+      "auto_correct": 11,
+      "auto_correct_pct": 61.1,
+      "needs_review": 7,
+      "needs_review_pct": 38.9,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 61.1,
+      "field_accuracy": {
+        "invoice_no": 61.1,
+        "date": 88.9,
+        "vendor": 72.2,
+        "total": 83.3,
+        "vat": 77.8
+      },
+      "calls": {
+        "local": 18
+      },
+      "by": {
+        "template=C": {
+          "auto_correct": 11,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 5,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C1-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 94.0,
+          "pred": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "nömrədə Kiril/Yunan hərfləri var (OCR 'HF'-i 'НЕ' oxuya bilər)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": "НЕ/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 88.6,
+          "pred": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 92.5,
+          "pred": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 57.1,
+          "pred": {
+            "invoice_no": "227755",
+            "date": "2026-02-07",
+            "vendor": "WENGE",
+            "total": 2602.24,
+            "vat": 121.61,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 56.0,
+          "pred": {
+            "invoice_no": "WENO 0",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dilital MMC",
+            "total": 3422.0,
+            "vat": 1896.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 58.5,
+          "pred": {
+            "invoice_no": "55000",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "OCR etibarı aşağıdır (54)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 53.6,
+          "pred": {
+            "invoice_no": "5557",
+            "date": "2026-07-04",
+            "vendor": "ib: ила OÜÜopçÜd",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 55.7,
+          "pred": {
+            "invoice_no": "00",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Ојна MMC",
+            "total": 5085.94,
+            "vat": 925.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil",
+            "OCR etibarı aşağıdır (54)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 53.9,
+          "pred": {
+            "invoice_no": "VF300/286",
+            "date": "2026-07-25",
+            "vendor": "Noutbuk Pro 15",
+            "total": 8117.59,
+            "vat": 1338.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        }
+      ]
+    },
+    "ladder-cloud": {
+      "n": 18,
+      "auto_correct": 11,
+      "auto_correct_pct": 61.1,
+      "needs_review": 7,
+      "needs_review_pct": 38.9,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 61.1,
+      "field_accuracy": {
+        "invoice_no": 61.1,
+        "date": 88.9,
+        "vendor": 72.2,
+        "total": 83.3,
+        "vat": 83.3
+      },
+      "calls": {
+        "local": 18,
+        "claude": 7
+      },
+      "by": {
+        "template=C": {
+          "auto_correct": 11,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 5,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C1-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 94.0,
+          "pred": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "nömrədə Kiril/Yunan hərfləri var (OCR 'HF'-i 'НЕ' oxuya bilər)"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 91.8,
+          "pred": {
+            "invoice_no": "НЕ/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 88.6,
+          "pred": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 92.5,
+          "pred": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C1-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "nömrə sənəd mətnində yoxdur",
+            "satıcı adı sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 57.1,
+          "pred": {
+            "invoice_no": "<UNKNOWN>",
+            "date": "2026-02-07",
+            "vendor": "<UNKNOWN>",
+            "total": 2602.24,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/887/26",
+            "date": "2026-02-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 3070.64,
+            "vat": 468.4,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C2-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "claude: cavab alınmadı"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 56.0,
+          "pred": {
+            "invoice_no": "WENO 0",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dilital MMC",
+            "total": 3422.0,
+            "vat": 1896.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/898/26",
+            "date": "2026-04-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 4481.36,
+            "vat": 683.6,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C3-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 58.5,
+          "pred": {
+            "invoice_no": "55000",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/425/26",
+            "date": "2026-01-28",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 1843.76,
+            "vat": 281.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C4-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "satıcı adı sənəd mətnində yoxdur",
+            "OCR etibarı aşağıdır (54)"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 53.6,
+          "pred": {
+            "invoice_no": "5557",
+            "date": "2026-07-04",
+            "vendor": "<UNKNOWN>",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/876/26",
+            "date": "2026-07-04",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 1030.32,
+            "vat": 157.17,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C5-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "nömrə sənəd mətnində yoxdur",
+            "satıcı adı sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 55.7,
+          "pred": {
+            "invoice_no": "<UNKNOWN>",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Ojma MMC",
+            "total": 6011.41,
+            "vat": 925.47,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/409/26",
+            "date": "2026-03-23",
+            "vendor": "Abşeron Dijital MMC",
+            "total": 6001.41,
+            "vat": 915.47,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C6-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "satıcı adı sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği sənəd mətnində yoxdur",
+            "OCR etibarı aşağıdır (54)"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 53.9,
+          "pred": {
+            "invoice_no": "VF300/286",
+            "date": "2026-09-09",
+            "vendor": "<UNKNOWN>",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/300/26",
+            "date": "2026-05-09",
+            "vendor": "Sumqayıt İT Həlləri MMC",
+            "total": 8117.59,
+            "vat": 1238.28,
+            "currency": "AZN"
+          }
+        }
+      ]
+    }
+  },
+  "llm_seconds": {
+    "local": 69.5,
+    "claude": 29.0
+  },
+  "llm_calls_unique": {
+    "local": 18,
+    "claude": 18
+  },
+  "label": "docs-heldout",
+  "seconds": 135.2
+}

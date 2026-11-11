@@ -1,0 +1,88 @@
+# QiymətRadar: rəqib qiymət və qaimə-faktura izləyicisi.
+# Ollama host-da işləyir (Apple Silicon GPU), konteynerlər ona host.docker.internal ilə çatır.
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      TZ: Asia/Baku
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./backend/app/schema.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5438:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      DEMOSHOP_URL: http://demoshop:8090
+      SELENIUM_URL: ${SELENIUM_URL:-}
+      VENDOR_MASTER: ${VENDOR_MASTER:-demo}      # təchizatçı siyahısı: boş=söndürülüb, demo, və ya 'Ad1;Ad2'
+      TZ: Asia/Baku
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./backend/app:/app/app
+      - ./backend/demoshop:/app/demoshop
+      - ./backend/tests:/app/tests
+    ports:
+      - "8005:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Rəqib mağazanın simulyasiyası: statik və dinamik səhifə, API, robots.txt, qaimə PDF-ləri, qiymət dəyişdirmə
+  demoshop:
+    build: ./backend
+    restart: unless-stopped
+    command: ["uvicorn", "demoshop.server:app", "--host", "0.0.0.0", "--port", "8090", "--reload"]
+    volumes:
+      - ./backend/app:/app/app
+      - ./backend/demoshop:/app/demoshop
+    ports:
+      - "8090:8090"
+
+  n8n:
+    image: n8nio/n8n:latest
+    restart: unless-stopped
+    environment:
+      BACKEND_URL: http://backend:8000
+      DEMOSHOP_URL: http://demoshop:8090
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: "false"
+      N8N_RESTRICT_FILE_ACCESS_TO: ""
+      TZ: Asia/Baku
+      # host portu (5684) konteyner portundan (5678) fərqlidir: bunlar olmasa editor chat işləmir
+      WEBHOOK_URL: http://localhost:5684/
+      N8N_EDITOR_BASE_URL: http://localhost:5684
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - n8n_storage:/home/node/.n8n
+      - ./n8n/workflows:/workflows
+    ports:
+      - "5684:5678"
+    depends_on:
+      - backend
+
+  # Dinamik səhifələr üçün real brauzer (yalnız lazım olanda): docker compose --profile selenium up -d selenium
+  selenium:
+    image: selenium/standalone-chromium:latest
+    profiles: ["selenium"]
+    shm_size: 2gb
+    ports:
+      - "4444:4444"
+
+volumes:
+  pg_data:
+  n8n_storage:

@@ -1,0 +1,3609 @@
+{
+  "split": "heldout",
+  "n": 18,
+  "modes": {
+    "regex": {
+      "n": 18,
+      "auto_correct": 0,
+      "auto_correct_pct": 0.0,
+      "needs_review": 18,
+      "needs_review_pct": 100.0,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 0.0,
+      "field_accuracy": {
+        "invoice_no": 0.0,
+        "date": 0.0,
+        "vendor": 0.0,
+        "total": 0.0,
+        "vat": 66.7
+      },
+      "calls": {},
+      "by": {
+        "template=C": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C7-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 92.1,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 91.7,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 89.5,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 93.5,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": true
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 91.9,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 52.9,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 56.8,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": null,
+            "currency": null
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 60.7,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 54.9,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 55.5,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": null,
+            "currency": null
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "regex",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "invoice_no tapılmadı",
+            "date tapılmadı",
+            "vendor tapılmadı",
+            "total tapılmadı"
+          ],
+          "calls": {},
+          "ocr_conf": 56.4,
+          "pred": {
+            "invoice_no": null,
+            "date": null,
+            "vendor": null,
+            "total": null,
+            "vat": 5755.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        }
+      ]
+    },
+    "local": {
+      "n": 18,
+      "auto_correct": 12,
+      "auto_correct_pct": 66.7,
+      "needs_review": 6,
+      "needs_review_pct": 33.3,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 66.7,
+      "field_accuracy": {
+        "invoice_no": 66.7,
+        "date": 77.8,
+        "vendor": 66.7,
+        "total": 83.3,
+        "vat": 72.2
+      },
+      "calls": {
+        "local": 18
+      },
+      "by": {
+        "template=C": {
+          "auto_correct": 12,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C7-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 92.1,
+          "pred": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.7,
+          "pred": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 89.5,
+          "pred": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.5,
+          "pred": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.9,
+          "pred": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "nömrədə Kiril/Yunan hərfləri var (OCR 'HF'-i 'НЕ' oxuya bilər)",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği sənəd mətnində yoxdur",
+            "OCR etibarı aşağıdır (53)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 52.9,
+          "pred": {
+            "invoice_no": "WEISTRO 0. ge de мә 2",
+            "date": "2023-10-02",
+            "vendor": "Xəzər Elektronika",
+            "total": 2208.94,
+            "vat": 337.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 56.8,
+          "pred": {
+            "invoice_no": "755€7€5777",
+            "date": "2026-05-11",
+            "vendor": " Yaşıl Bağ Market MMC",
+            "total": 72577.0,
+            "vat": 1896.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 60.7,
+          "pred": {
+            "invoice_no": "7",
+            "date": "2026-06-07",
+            "vendor": "7",
+            "total": 6058.97,
+            "vat": 924.24,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil",
+            "OCR etibarı aşağıdır (55)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 54.9,
+          "pred": {
+            "invoice_no": "128707",
+            "date": "2026-01-01",
+            "vendor": "Qafqaz Komputer",
+            "total": 1741.25,
+            "vat": 0.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 55.5,
+          "pred": {
+            "invoice_no": "577777",
+            "date": "2026-07-27",
+            "vendor": "Günəş Klinikası MMC",
+            "total": 4107.56,
+            "vat": 750.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 56.4,
+          "pred": {
+            "invoice_no": "77",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        }
+      ]
+    },
+    "claude": {
+      "n": 18,
+      "auto_correct": 12,
+      "auto_correct_pct": 66.7,
+      "needs_review": 6,
+      "needs_review_pct": 33.3,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 66.7,
+      "field_accuracy": {
+        "invoice_no": 66.7,
+        "date": 77.8,
+        "vendor": 66.7,
+        "total": 83.3,
+        "vat": 77.8
+      },
+      "calls": {
+        "claude": 18
+      },
+      "by": {
+        "template=C": {
+          "auto_correct": 12,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C7-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 92.1,
+          "pred": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 91.7,
+          "pred": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 89.5,
+          "pred": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 93.5,
+          "pred": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "claude",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 91.9,
+          "pred": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": false
+          },
+          "issues": [
+            "tarix YYYY-MM-DD deyil",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil",
+            "OCR etibarı aşağıdır (53)"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 52.9,
+          "pred": {
+            "invoice_no": "32777",
+            "date": "<UNKNOWN>",
+            "vendor": "Xəzər Elektronika",
+            "total": 2208.94,
+            "vat": 337.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "none",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "claude: cavab alınmadı"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 56.8,
+          "pred": {},
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "satıcı adı sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 60.7,
+          "pred": {
+            "invoice_no": "7",
+            "date": "2026-06-08",
+            "vendor": "<UNKNOWN>",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "OCR etibarı aşağıdır (55)"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 54.9,
+          "pred": {
+            "invoice_no": "128707",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Komputer",
+            "total": 1741.25,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "none",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "claude: cavab alınmadı"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 55.5,
+          "pred": {},
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "claude": 1
+          },
+          "ocr_conf": 56.4,
+          "pred": {
+            "invoice_no": "77",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        }
+      ]
+    },
+    "ladder": {
+      "n": 18,
+      "auto_correct": 12,
+      "auto_correct_pct": 66.7,
+      "needs_review": 6,
+      "needs_review_pct": 33.3,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 66.7,
+      "field_accuracy": {
+        "invoice_no": 66.7,
+        "date": 77.8,
+        "vendor": 66.7,
+        "total": 83.3,
+        "vat": 72.2
+      },
+      "calls": {
+        "local": 18
+      },
+      "by": {
+        "template=C": {
+          "auto_correct": 12,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C7-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 92.1,
+          "pred": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.7,
+          "pred": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 89.5,
+          "pred": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.5,
+          "pred": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.9,
+          "pred": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "nömrədə Kiril/Yunan hərfləri var (OCR 'HF'-i 'НЕ' oxuya bilər)",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği sənəd mətnində yoxdur",
+            "OCR etibarı aşağıdır (53)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 52.9,
+          "pred": {
+            "invoice_no": "WEISTRO 0. ge de мә 2",
+            "date": "2023-10-02",
+            "vendor": "Xəzər Elektronika",
+            "total": 2208.94,
+            "vat": 337.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 56.8,
+          "pred": {
+            "invoice_no": "755€7€5777",
+            "date": "2026-05-11",
+            "vendor": " Yaşıl Bağ Market MMC",
+            "total": 72577.0,
+            "vat": 1896.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 60.7,
+          "pred": {
+            "invoice_no": "7",
+            "date": "2026-06-07",
+            "vendor": "7",
+            "total": 6058.97,
+            "vat": 924.24,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil",
+            "OCR etibarı aşağıdır (55)"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 54.9,
+          "pred": {
+            "invoice_no": "128707",
+            "date": "2026-01-01",
+            "vendor": "Qafqaz Komputer",
+            "total": 1741.25,
+            "vat": 0.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 55.5,
+          "pred": {
+            "invoice_no": "577777",
+            "date": "2026-07-27",
+            "vendor": "Günəş Klinikası MMC",
+            "total": 4107.56,
+            "vat": 750.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 56.4,
+          "pred": {
+            "invoice_no": "77",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        }
+      ]
+    },
+    "ladder-cloud": {
+      "n": 18,
+      "auto_correct": 12,
+      "auto_correct_pct": 66.7,
+      "needs_review": 6,
+      "needs_review_pct": 33.3,
+      "silent_errors": 0,
+      "silent_error_pct": 0.0,
+      "exact_any_status_pct": 66.7,
+      "field_accuracy": {
+        "invoice_no": 66.7,
+        "date": 83.3,
+        "vendor": 66.7,
+        "total": 83.3,
+        "vat": 77.8
+      },
+      "calls": {
+        "local": 18,
+        "claude": 6
+      },
+      "by": {
+        "template=C": {
+          "auto_correct": 12,
+          "silent_error": 0,
+          "n": 18
+        },
+        "channel=hard": {
+          "auto_correct": 0,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=noisy": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        },
+        "channel=pdf": {
+          "auto_correct": 6,
+          "silent_error": 0,
+          "n": 6
+        }
+      },
+      "rows": [
+        {
+          "id": "C7-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-pdf",
+          "template": "C",
+          "channel": "pdf",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": null,
+          "pred": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 92.1,
+          "pred": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.7,
+          "pred": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.3,
+          "pred": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 89.5,
+          "pred": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 93.5,
+          "pred": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-noisy",
+          "template": "C",
+          "channel": "noisy",
+          "status": "ok",
+          "extractor": "local",
+          "exact": true,
+          "fields": {
+            "invoice_no": true,
+            "date": true,
+            "vendor": true,
+            "total": true,
+            "vat": true
+          },
+          "issues": [],
+          "calls": {
+            "local": 1
+          },
+          "ocr_conf": 91.9,
+          "pred": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C7-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": false
+          },
+          "issues": [
+            "tarix YYYY-MM-DD deyil",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği yekunun 18/118 hissəsi ilə uyğun deyil",
+            "OCR etibarı aşağıdır (53)"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 52.9,
+          "pred": {
+            "invoice_no": "32777",
+            "date": "<UNKNOWN>",
+            "vendor": "Xəzər Elektronika",
+            "total": 2208.94,
+            "vat": 337.96,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/757/26",
+            "date": "2026-04-14",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 2208.94,
+            "vat": 336.96,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C8-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "claude: cavab alınmadı"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 56.8,
+          "pred": {
+            "invoice_no": "755€7€5777",
+            "date": "2026-05-11",
+            "vendor": " Yaşıl Bağ Market MMC",
+            "total": 72577.0,
+            "vat": 1896.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/905/26",
+            "date": "2026-05-11",
+            "vendor": "Bakı Ofis Təchizatı MMC",
+            "total": 5387.37,
+            "vat": 821.8,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C9-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "satıcı adı sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "ƏDV məbləği sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 60.7,
+          "pred": {
+            "invoice_no": "7",
+            "date": "2026-06-08",
+            "vendor": "<UNKNOWN>",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/106/26",
+            "date": "2026-06-05",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 6058.97,
+            "vat": 924.25,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C10-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "tarix sənəd mətnində yoxdur",
+            "yekun məbləğ sənəd mətnində yoxdur",
+            "OCR etibarı aşağıdır (55)"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 54.9,
+          "pred": {
+            "invoice_no": "128707",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Komputer",
+            "total": 1741.25,
+            "vat": null,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/819/26",
+            "date": "2026-08-05",
+            "vendor": "Qafqaz Kompüter MMC",
+            "total": 2054.68,
+            "vat": 313.43,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C11-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "local",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": false,
+            "vendor": false,
+            "total": false,
+            "vat": false
+          },
+          "issues": [
+            "claude: cavab alınmadı"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 55.5,
+          "pred": {
+            "invoice_no": "577777",
+            "date": "2026-07-27",
+            "vendor": "Günəş Klinikası MMC",
+            "total": 4107.56,
+            "vat": 750.0,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/562/26",
+            "date": "2026-07-07",
+            "vendor": "Gəncə Avadanlıq MMC",
+            "total": 4846.92,
+            "vat": 739.36,
+            "currency": "AZN"
+          }
+        },
+        {
+          "id": "C12-hard",
+          "template": "C",
+          "channel": "hard",
+          "status": "needs_review",
+          "extractor": "claude",
+          "exact": false,
+          "fields": {
+            "invoice_no": false,
+            "date": true,
+            "vendor": false,
+            "total": true,
+            "vat": true
+          },
+          "issues": [
+            "yekun məbləğ sənəd mətnində yoxdur"
+          ],
+          "calls": {
+            "local": 1,
+            "claude": 1
+          },
+          "ocr_conf": 56.4,
+          "pred": {
+            "invoice_no": "77",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          },
+          "truth": {
+            "invoice_no": "HF/952/26",
+            "date": "2026-12-26",
+            "vendor": "Xəzər Elektronika QSC",
+            "total": 1532.03,
+            "vat": 233.7,
+            "currency": "AZN"
+          }
+        }
+      ]
+    }
+  },
+  "llm_seconds": {
+    "local": 67.9,
+    "claude": 28.2
+  },
+  "llm_calls_unique": {
+    "local": 18,
+    "claude": 18
+  },
+  "label": "docs-heldout2",
+  "seconds": 130.9
+}

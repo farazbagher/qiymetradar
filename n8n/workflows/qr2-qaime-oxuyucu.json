@@ -1,0 +1,295 @@
+{
+  "id": "QrInvoiceReader",
+  "name": "QR2 - Qaimə Oxuyucu (PDF + OCR)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "qr000000-0000-4000-8000-000000000001",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1000,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "// Demo: biri mətnli PDF, biri skan PDF. Real layihədə bura e-poçt qoşması və ya qovluq node-u gəlir.\nconst base = $env.DEMOSHOP_URL;\nreturn [\n  { json: { url: `${base}/docs/inv-001.pdf`, name: 'inv-001.pdf' } },\n  { json: { url: `${base}/docs/scan/inv-003.pdf`, name: 'inv-003-skan.pdf' } },\n];"
+      },
+      "id": "qr000000-0000-4000-8000-000000000002",
+      "name": "Sənəd siyahısı",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -780,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.url }}",
+        "options": {
+          "timeout": 30000,
+          "response": {
+            "response": {
+              "responseFormat": "file",
+              "outputPropertyName": "data"
+            }
+          }
+        }
+      },
+      "id": "qr000000-0000-4000-8000-000000000003",
+      "name": "HTTP Request - Faylı yüklə",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -540,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "binaryPropertyName": "data",
+        "options": {
+          "keepSource": "both"
+        }
+      },
+      "id": "qr000000-0000-4000-8000-000000000004",
+      "name": "Extract From File",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        -300,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ ($json.text || '').trim().length }}",
+              "rightValue": 20,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "qr000000-0000-4000-8000-000000000005",
+      "name": "IF - mətn qatı var?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -60,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "// Extract From File PDF-dən mətni çıxarıb: backend yalnız strukturlaşdırır və yoxlayır.\nconst j = $input.first().json;\nreturn [{ json: { filename: $('Sənəd siyahısı').item.json.name, text: j.text, mode: 'ladder' } }];"
+      },
+      "id": "qr000000-0000-4000-8000-000000000006",
+      "name": "Code - Mətn yükü",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        180,
+        -120
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.BACKEND_URL }}/documents/extract-text",
+        "options": {
+          "timeout": 180000
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}"
+      },
+      "id": "qr000000-0000-4000-8000-000000000007",
+      "name": "Backend - Mətni strukturlaşdır",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        420,
+        -120
+      ],
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.BACKEND_URL }}/documents/extract",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "file",
+              "inputDataFieldName": "data"
+            },
+            {
+              "name": "mode",
+              "value": "ladder"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 180000
+        }
+      },
+      "id": "qr000000-0000-4000-8000-000000000008",
+      "name": "Backend - Skan: OCR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        180,
+        140
+      ],
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "language": "javaScript",
+        "jsCode": "const d = $json;\nreturn { json: { fayl: d.filename, uslub: d.method + ' / ' + d.extractor, status: d.status, nomre: d.data.invoice_no, tarix: d.data.date, satici: d.data.vendor, cemi: d.data.total, problemler: d.issues } };"
+      },
+      "id": "qr000000-0000-4000-8000-000000000009",
+      "name": "Code - Nəticə",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        680,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Sənəd siyahısı",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sənəd siyahısı": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request - Faylı yüklə",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request - Faylı yüklə": {
+      "main": [
+        [
+          {
+            "node": "Extract From File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract From File": {
+      "main": [
+        [
+          {
+            "node": "IF - mətn qatı var?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF - mətn qatı var?": {
+      "main": [
+        [
+          {
+            "node": "Code - Mətn yükü",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Backend - Skan: OCR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code - Mətn yükü": {
+      "main": [
+        [
+          {
+            "node": "Backend - Mətni strukturlaşdır",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Backend - Mətni strukturlaşdır": {
+      "main": [
+        [
+          {
+            "node": "Code - Nəticə",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Backend - Skan: OCR": {
+      "main": [
+        [
+          {
+            "node": "Code - Nəticə",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "QrErrorNotify"
+  }
+}
